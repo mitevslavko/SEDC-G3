@@ -1,0 +1,92 @@
+.framesquare {
+    position: relative;
+    background-color: rgb(69, 58, 54);
+    height: 477px;
+    width: 477px;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid rgb(69, 58, 54) ;
+    border-top: 1px;
+}
+
+.columnrectangle- {
+    height: 475px;
+    width: 120px;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    margin: 5px;
+}
+
+#upper {
+    background-color: bisque;
+    width: 100px;
+    height: 150px;
+    margin: 6px;
+    margin-bottom: 12px;
+
+
+}
+
+#midelement {
+    background-color: bisque;
+    width: 100px;
+    height: 200px;
+    margin: 6px;
+}
+
+#lower {
+    background-color: lightskyblue;
+    height: 100px;
+    width: 100px;
+    margin-top: 8px;
+    margin-left: 6px;
+    margin-bottom: 2px;
+}
+
+#bigone {
+    width: 363px;
+    height: 363px;
+    position: absolute;
+    top: 5px;
+    left: 105px;
+    background-color: red;
+    margin-left: 7px;
+}
+
+#bottommid {
+    background-color: antiquewhite;
+    height: 100px;
+    width: 330px;
+    position: absolute;
+    top: 371px;
+    left: 109px;
+    margin: 5px;
+    
+}
+
+.seccolumn {
+    height: 111px;
+    width: 30px;
+    position: absolute;
+    top: 370px;
+    left: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+#tiny1 {
+    background-color: antiquewhite;
+    width: 20px;
+    height: 46px;
+    margin-bottom: 6px;
+}
+
+#tiny2 {
+    background-color: yellow;
+    width: 20px;
+    height: 46px;
+    margin-top: 7px;
+}
+
