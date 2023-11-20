@@ -1,0 +1,99 @@
+.mainframe {
+    background-color: black;
+    height: 880px;
+    width: 902px;
+}
+
+.toprow {
+    height: 89px;
+    width: 108;
+    display: flex;
+    flex-direction: row;
+}
+
+.toprowitem {
+    margin-bottom: 6px;
+    margin-right: 7px;
+}
+
+#toprow1 {
+    background-color: lightblue;
+    width: 220px;
+    height: 88px;
+}
+
+#toprow2 {
+    background-color: lightgray;
+    width: 325px;
+    height: 88px;
+}
+
+#toprow3 {
+    background-color: gold;
+    width: 279px;
+    height: 88px;
+}
+
+.topcolumn {
+    width: 50px;
+    height: 878px;
+    position: relative;
+    right: 6px;
+    bottom: 89px;
+    float: right;
+    
+}
+
+.topcolumnitem {
+    margin-left: 5px;
+}
+
+#topcolumnitem1 {
+    background-color: bisque;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 8px;
+}
+
+#topcolumnitem2 {
+    background-color: red;
+    width: 100%;
+    height: 29%;
+
+}
+.midleftcol {
+    height: 786px;
+    width: 107px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+
+.midleftcol-item {
+    margin-right: 3px;
+}
+
+#leftitem1 {
+    background-color: antiquewhite;
+    height: 220px;
+    width: 103px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+#leftitem2 {
+    background-color: aqua;
+    height: 330px;
+    width: 103px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+#leftitem3 {
+    background-color: orange;
+    height: 180px;
+    width: 103px;
+    margin-top: 10px;
+}
