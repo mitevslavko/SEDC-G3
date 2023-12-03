@@ -1,0 +1,255 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+.main-container {
+    background-color: tomato;
+    height: 244px;
+    width: 500px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+
+}
+
+
+.animation-container1 {
+    background-color: orange;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px 30px 20px 30px;
+    border: 0;
+}
+
+
+.loaders {
+    background-color: white;
+    width: 0px;
+    height: 6px;
+    animation: loading-lines 3s forwards infinite ;
+    transition: width 3s;
+    
+}
+
+@keyframes loading-lines {
+    2% {width: 1px; background-color: white;}
+    70% {width: 189px; background-color: white;}
+    100% {width: 190px; background-color: transparent;}
+}
+
+
+.titleload {
+    background-color: chocolate;
+    color: azure;
+}
+.animation-container2 {
+    background-color: darkorange;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
+    padding: 40px 40px 20px 40px;
+}
+
+.animation-container3 {
+    background-color: darkorange;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+}
+
+.dot-container {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    align-items: center;
+    top: 20%;
+    left: 30%;
+    animation: dots-rotation 3s ease-in infinite;
+    transform: rotate();
+    
+}
+
+@keyframes dots-rotation {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(0.5turn);}
+    100% {transform: rotate(1turn);}
+}
+
+
+.rotating-item1 {
+    background-color: whitesmoke;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    
+}
+
+.rotating-item {
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 38%;
+    top: 40%;
+    
+}
+
+.rotating-item2 {
+    background-color: whitesmoke;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    
+}
+
+
+.animation-container4 {
+    background-color: orange;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    
+}
+
+.loading-line {
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    position: static;
+    z-index: 9;
+
+}
+
+.loading-filler {
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    width: 1px;
+    height: 18px;
+    animation: loadfill 3s forwards infinite;
+    transition: width 3s;
+}
+
+@keyframes loadfill {
+    0% {width: 1px; background-color: white;}
+    70% { width: 170px; background-color: white;}
+    100% {width: 170px; background-color: transparent;}
+}
+
+#container {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#child{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    opacity: 0.7;
+    position: absolute;
+    animation: move-arround 3s ease-in forwards infinite normal;
+}
+
+#container:active #child {
+    animation-play-state: paused;
+}
+
+@keyframes move-arround{
+    0% {
+        transform: translateX(0);
+        opacity: 0.9;
+    }
+
+    20% {
+        transform: translateX(400%);
+    }
+
+    60% {
+        transform: translate(400%, 400%);
+    }
+
+    80% {
+        transform: translateY(400%);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+}
+
+#center-child {
+    background-color: darkgoldenrod;
+    width: 58px;
+    height: 58px;
+    z-index: 8;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#center-inner-child {
+    background-color: azure;
+    z-index: 10;
+    width: 1px;
+    height: 58px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    animation: squarefill 3s forwards infinite;
+    transition: width 3s;
+    animation-play-state: running;
+
+}
+
+
+
+@keyframes squarefill{
+    90% {width: 56px; background-color: white;}
+    100% {width: 58px; background-color: white;}
+
+
+}
+
